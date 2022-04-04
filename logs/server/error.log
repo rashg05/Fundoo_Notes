@@ -355,3 +355,210 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2022-04-04T07:27:33.770Z"}
+error: 
+    status - 500 
+    message - ReferenceError: body is not defined
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:32)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T13:54:15.916Z"}
+error: 
+    status - 500 
+    message - ReferenceError: body is not defined
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:32)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T13:54:51.197Z"}
+error: 
+    status - 500 
+    message - ReferenceError: body is not defined
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:32)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T13:55:37.240Z"}
+error: 
+    status - 500 
+    message - ReferenceError: body is not defined
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:32)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T14:05:52.022Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'email')
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:41)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T14:06:47.861Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'email')
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:41)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T14:06:49.197Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'email')
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:41)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T14:06:49.693Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'email')
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:41)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T14:07:05.504Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'email')
+    at _callee2$ (F:\Study Material\googlekeep\src\services\/user.service.js:18:41)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.userLogIn (F:\Study Material\googlekeep\src\services\/user.service.js:17:23)
+    at _callee2$ (F:\Study Material\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T14:10:10.346Z"}

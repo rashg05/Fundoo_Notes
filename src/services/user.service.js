@@ -1,5 +1,5 @@
 import { result } from '@hapi/joi/lib/base';
-import User from '../models/user.model';
+import User from '../models/user.model';  
  
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
@@ -14,7 +14,22 @@ export const userRegistration = async (userBody) => {
 };
 
 //get single user
-export const getUser = async (body) => {
-  const data = await User.find(id);
-  return data;
+export const userLogIn = async (userBody) => {
+  const data = await User.find(userBody.email);
+  console.log(data);
+
+ if(data != null){
+   const validPassword = bcrypt.compareSync(userBody.password, data.password);
+   console.log(userBody.password);
+   console.log(data.password);
+   if(validPassword){
+    
+   }  
+   else{
+     throw new Error('password does not match');
+   }
+ }
+ else{
+  throw new Error('User not Registered');
+ }
 };
