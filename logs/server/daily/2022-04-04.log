@@ -1,0 +1,252 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T02:54:48.042Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T02:54:48.088Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token   in JSON at position 2
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Windows\System32\googlekeep\googlekeep\node_modules\body-parser\lib\types\json.js:158:10)
+    at parse (C:\Windows\System32\googlekeep\googlekeep\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Windows\System32\googlekeep\googlekeep\node_modules\raw-body\index.js:224:16)
+    at done (C:\Windows\System32\googlekeep\googlekeep\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Windows\System32\googlekeep\googlekeep\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-04-04T02:55:02.876Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T03:13:29.030Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T03:13:29.058Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T03:14:54.498Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T03:14:54.522Z"}
+error: 
+      status - 11000
+      message - E11000 duplicate key error collection: My_Database.users index: email_1 dup key: { email: "meenagajra@gmail.com" } 
+      url - /api/v1/users 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2022-04-04T03:15:09.470Z"}
+error: 
+    status - 500 
+    message - RangeError: Invalid status code: 11000
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.writeHead (node:_http_server:274:11)
+    at ServerResponse.writeHead (C:\Windows\System32\googlekeep\googlekeep\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:265:8)
+    at write_ (node:_http_outgoing:766:9)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at ServerResponse.send (C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\response.js:221:10)
+    at ServerResponse.json (C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\response.js:267:15)
+    at appErrorHandler (C:\Windows\System32\googlekeep\googlekeep\src\middlewares\/error.middleware.js:36:26)
+    at Layer.handle_error (C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\router\index.js:321:13)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\router\index.js:341:12)
+    at Immediate.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\router\index.js:275:10)
+    at Immediate._onImmediate (C:\Windows\System32\googlekeep\googlekeep\node_modules\express\lib\router\index.js:641:15)
+    at processImmediate (node:internal/timers:468:21) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T03:15:09.488Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T03:18:49.508Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T03:18:49.548Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T03:24:53.516Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T03:24:53.545Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:13:35.955Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:13:35.997Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:13:39.955Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:13:39.993Z"}
+error: 
+    status - 500 
+    message - ReferenceError: bcrypt is not defined
+    at _callee$ (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:4:24)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.newUser (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:4:21)
+    at _callee2$ (C:\Windows\System32\googlekeep\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T06:14:36.050Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:15:08.634Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:15:08.678Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:15:55.181Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:15:55.213Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:15:59.540Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:15:59.566Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:17:01.228Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:17:01.300Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:17:06.911Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:17:06.938Z"}
+error: 
+    status - 500 
+    message - ReferenceError: bcrypt is not defined
+    at _callee$ (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:4:24)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.newUser (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:4:21)
+    at _callee2$ (C:\Windows\System32\googlekeep\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T06:17:07.552Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:18:49.718Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:18:49.764Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:55:28.739Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:55:28.776Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T06:55:50.976Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T06:55:51.005Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:08:00.324Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:08:00.355Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:08:15.232Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:08:15.258Z"}
+error: 
+    status - 500 
+    message - ReferenceError: bcrypt is not defined
+    at _callee$ (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:24)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.newUser (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:21)
+    at _callee2$ (C:\Windows\System32\googlekeep\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T07:08:29.460Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:12:08.285Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:12:08.341Z"}
+error: 
+    status - 500 
+    message - ReferenceError: bcrypt is not defined
+    at _callee$ (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:24)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.newUser (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:21)
+    at _callee2$ (C:\Windows\System32\googlekeep\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T07:12:12.722Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:13:52.745Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:13:52.776Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:13:58.542Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:13:58.573Z"}
+error: 
+    status - 500 
+    message - ReferenceError: bcrypt is not defined
+    at _callee$ (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:24)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.newUser (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:21)
+    at _callee2$ (C:\Windows\System32\googlekeep\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T07:14:02.675Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:16:33.235Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:16:33.285Z"}
+error: 
+    status - 500 
+    message - ReferenceError: bcrypt is not defined
+    at _callee$ (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:24)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.newUser (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:5:21)
+    at _callee2$ (C:\Windows\System32\googlekeep\googlekeep\src\controllers\/user.controller.js:31:36)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T07:16:38.815Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:22:49.622Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:22:49.653Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:25:30.820Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:25:30.862Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:25:45.746Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:25:45.769Z"}
+error: 
+    status - 500 
+    message - ReferenceError: next is not defined
+    at _callee$ (C:\Windows\System32\googlekeep\googlekeep\src\services\/user.service.js:16:3)
+    at tryCatch (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (C:\Windows\System32\googlekeep\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Windows\System32\googlekeep\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-04-04T07:27:33.770Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:27:51.897Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:27:52.082Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-04T07:28:22.198Z"}
+info: Connected to the database. {"timestamp":"2022-04-04T07:28:22.229Z"}
