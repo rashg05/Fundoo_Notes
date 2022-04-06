@@ -227,3 +227,73 @@ info: ::1 - - [04/Apr/2022:14:07:05 +0000] "GET /api/v1/users/login HTTP/1.1" 50
 
 info: ::1 - - [04/Apr/2022:14:10:10 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
 
+error: uncaughtException: noteRoute is not defined
+ReferenceError: noteRoute is not defined
+    at routes (F:\Study Material\googlekeep\src\routes\/index.js:15:24)
+    at Object.<anonymous> (F:\Study Material\googlekeep\src\/index.js:32:32)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._compile (F:\Study Material\googlekeep\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.newLoader [as .js] (F:\Study Material\googlekeep\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\node\lib\_babel-node.js:176:21)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47 {"date":"Wed Apr 06 2022 22:39:26 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1984537},"process":{"argv":["node","F:\\Study Material\\googlekeep\\src\\index.js"],"cwd":"F:\\Study Material\\googlekeep","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18720107,"external":23331115,"heapTotal":77709312,"heapUsed":46169568,"rss":111235072},"pid":1644,"uid":null,"version":"v16.14.2"},"stack":"ReferenceError: noteRoute is not defined\n    at routes (F:\\Study Material\\googlekeep\\src\\routes\\/index.js:15:24)\n    at Object.<anonymous> (F:\\Study Material\\googlekeep\\src\\/index.js:32:32)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Module._compile (F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n    at Object.newLoader [as .js] (F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n    at Object.<anonymous> (F:\\Study Material\\googlekeep\\node_modules\\@babel\\node\\lib\\_babel-node.js:176:21)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n    at node:internal/main/run_main_module:17:47","trace":[{"column":24,"file":"F:\\Study Material\\googlekeep\\src\\routes\\/index.js","function":"routes","line":15,"method":null,"native":false},{"column":32,"file":"F:\\Study Material\\googlekeep\\src\\/index.js","function":null,"line":32,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1103,"method":"_compile","native":false},{"column":24,"file":"F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1157,"method":".js","native":false},{"column":7,"file":"F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":822,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":77,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":21,"file":"F:\\Study Material\\googlekeep\\node_modules\\@babel\\node\\lib\\_babel-node.js","function":null,"line":176,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1103,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1157,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":822,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":77,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":17,"method":null,"native":false}]}
+error: uncaughtException: noteRoute is not defined
+ReferenceError: noteRoute is not defined
+    at routes (F:\Study Material\googlekeep\src\routes\/index.js:15:24)
+    at Object.<anonymous> (F:\Study Material\googlekeep\src\/index.js:32:32)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._compile (F:\Study Material\googlekeep\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.newLoader [as .js] (F:\Study Material\googlekeep\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\node\lib\_babel-node.js:176:21)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47 {"date":"Wed Apr 06 2022 22:40:02 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1984573},"process":{"argv":["node","F:\\Study Material\\googlekeep\\src\\index.js"],"cwd":"F:\\Study Material\\googlekeep","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19001704,"external":25946697,"heapTotal":79020032,"heapUsed":48611680,"rss":110678016},"pid":19568,"uid":null,"version":"v16.14.2"},"stack":"ReferenceError: noteRoute is not defined\n    at routes (F:\\Study Material\\googlekeep\\src\\routes\\/index.js:15:24)\n    at Object.<anonymous> (F:\\Study Material\\googlekeep\\src\\/index.js:32:32)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Module._compile (F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n    at Object.newLoader [as .js] (F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n    at Object.<anonymous> (F:\\Study Material\\googlekeep\\node_modules\\@babel\\node\\lib\\_babel-node.js:176:21)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n    at node:internal/main/run_main_module:17:47","trace":[{"column":24,"file":"F:\\Study Material\\googlekeep\\src\\routes\\/index.js","function":"routes","line":15,"method":null,"native":false},{"column":32,"file":"F:\\Study Material\\googlekeep\\src\\/index.js","function":null,"line":32,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1103,"method":"_compile","native":false},{"column":24,"file":"F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1157,"method":".js","native":false},{"column":7,"file":"F:\\Study Material\\googlekeep\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":822,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":77,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":21,"file":"F:\\Study Material\\googlekeep\\node_modules\\@babel\\node\\lib\\_babel-node.js","function":null,"line":176,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1103,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1157,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":822,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":77,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":17,"method":null,"native":false}]}
+info: ::1 - - [06/Apr/2022:17:13:47 +0000] "GET /api/v1/notes HTTP/1.1" 400 56 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:29:43 +0000] "POST /api/v1/user/login HTTP/1.1" 404 47 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:30:16 +0000] "POST /api/v1/users/login HTTP/1.1" 404 47 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:30:54 +0000] "GET /api/v1 HTTP/1.1" 200 9 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:31:03 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:32:38 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:36:06 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:36:33 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:44:33 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:44:39 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:44:48 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:46:20 +0000] "GET /api/v1/users/login HTTP/1.1" 500 88 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:48:28 +0000] "GET /api/v1/users/login HTTP/1.1" 500 58 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:52:02 +0000] "GET /api/v1/users/login HTTP/1.1" 500 58 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:53:33 +0000] "GET /api/v1/users/login HTTP/1.1" 500 58 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [06/Apr/2022:17:54:30 +0000] "GET /api/v1/users/login HTTP/1.1" 200 252 "-" "PostmanRuntime/7.29.0"
+
+info: ::ffff:127.0.0.1 - - [06/Apr/2022:17:55:21 +0000] "GET /api/v1/users/login HTTP/1.1" 200 252 "-" "Thunder Client (https://www.thunderclient.com)"
+

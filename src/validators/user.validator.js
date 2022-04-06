@@ -20,3 +20,5 @@ export const userRegistrationValidator = (req, res, next) => {
     next();
   }
 };
+
+
