@@ -9,7 +9,7 @@ import * as UserService from '../services/user.service';
  */
 export const userRegistration = async (req, res, next) => {
   try {
-    const data = await UserService.newUser(req.userBody);
+    const data = await UserService.userRegistration(req.body);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
@@ -28,7 +28,7 @@ export const userRegistration = async (req, res, next) => {
  */
  export const userLogIn = async (req, res, next) => {
   try {
-    const data = await UserService.userLogIn(req.userBody);
+    const data = await UserService.userLogIn(req.body);
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
       data: data,
