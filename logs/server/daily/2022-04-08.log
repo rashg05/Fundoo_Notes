@@ -1,0 +1,309 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-07T19:39:29.004Z"}
+info: Connected to the database. {"timestamp":"2022-04-07T19:39:29.031Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-07T19:44:51.879Z"}
+info: Connected to the database. {"timestamp":"2022-04-07T19:44:51.906Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T02:42:45.786Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T02:42:45.821Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T02:43:08.660Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T02:43:08.699Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T02:43:25.880Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T02:43:25.931Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T02:45:58.227Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T02:45:58.266Z"}
+error: 
+    status - 500 
+    message - ReferenceError: UserId is not defined
+    at _callee3$ (F:\Study Material\googlekeep\src\services\/note.service.js:24:9)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateNote (F:\Study Material\googlekeep\src\services\/note.service.js:18:26)
+    at _callee4$ (F:\Study Material\googlekeep\src\controllers\/note.controller.js:69:45)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/notes/624ebf76089f8017c42afa1f 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T02:48:36.324Z"}
+error: 
+    status - 500 
+    message - ReferenceError: UserId is not defined
+    at _callee3$ (F:\Study Material\googlekeep\src\services\/note.service.js:24:9)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateNote (F:\Study Material\googlekeep\src\services\/note.service.js:18:26)
+    at _callee4$ (F:\Study Material\googlekeep\src\controllers\/note.controller.js:69:45)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/notes/624ebf76089f8017c42afa1f 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T02:49:29.554Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T02:49:56.512Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T02:49:56.552Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T02:55:29.188Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T02:55:29.224Z"}
+error: 
+    status - 500 
+    message - ReferenceError: UserId is not defined
+    at _callee3$ (F:\Study Material\googlekeep\src\services\/note.service.js:24:9)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateNote (F:\Study Material\googlekeep\src\services\/note.service.js:18:26)
+    at _callee4$ (F:\Study Material\googlekeep\src\controllers\/note.controller.js:69:45)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/notes/624ebf76089f8017c42afa1f 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:03:07.755Z"}
+error: 
+    status - 500 
+    message - ReferenceError: UserId is not defined
+    at _callee3$ (F:\Study Material\googlekeep\src\services\/note.service.js:24:9)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateNote (F:\Study Material\googlekeep\src\services\/note.service.js:18:26)
+    at _callee4$ (F:\Study Material\googlekeep\src\controllers\/note.controller.js:69:45)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/notes/624ebf76089f8017c42afa1f 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:03:19.872Z"}
+error: 
+    status - 500 
+    message - ReferenceError: UserId is not defined
+    at _callee3$ (F:\Study Material\googlekeep\src\services\/note.service.js:24:9)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateNote (F:\Study Material\googlekeep\src\services\/note.service.js:18:26)
+    at _callee4$ (F:\Study Material\googlekeep\src\controllers\/note.controller.js:69:45)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:03:39.454Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:04:39.122Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:04:39.159Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:05:03.760Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:05:03.797Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading '_id')
+    at _callee3$ (F:\Study Material\googlekeep\src\services\/note.service.js:20:19)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateNote (F:\Study Material\googlekeep\src\services\/note.service.js:18:26)
+    at _callee4$ (F:\Study Material\googlekeep\src\controllers\/note.controller.js:69:45)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:05:17.976Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:07:38.870Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:07:38.920Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:08:12.673Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:08:12.707Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: undefined, UserId: 'Hanish2171@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:08:17.465Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:08:48.291Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:08:48.326Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:12:02.300Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:12:02.341Z"}
+error: 
+    status - 500 
+    message - MongooseError: Callback must be a function, got [object Object]
+    at Function.Model.$handleCallbackError (F:\Study Material\googlekeep\node_modules\mongoose\lib\model.js:5067:11)
+    at Function.findByIdAndUpdate (F:\Study Material\googlekeep\node_modules\mongoose\lib\model.js:2694:19)
+    at _callee3$ (F:\Study Material\googlekeep\src\services\/note.service.js:19:29)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21)
+    at asyncGeneratorStep (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (F:\Study Material\googlekeep\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateNote (F:\Study Material\googlekeep\src\services\/note.service.js:18:26)
+    at _callee4$ (F:\Study Material\googlekeep\src\controllers\/note.controller.js:69:45)
+    at tryCatch (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:294:22)
+    at Generator.next (F:\Study Material\googlekeep\node_modules\regenerator-runtime\runtime.js:119:21) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:12:07.355Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:14:53.206Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:14:53.239Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'Hanish2171@gmail.com', UserId: 'Hanish2171@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:15:23.867Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:15:38.537Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:15:38.569Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'Hanish2171@gmail.com', UserId: 'Hanish2171@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:15:42.340Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:16:08.988Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:16:09.015Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:18:22.532Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:18:22.566Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:21:53.737Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:21:53.777Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: undefined, UserId: 'Hanish2171@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:21:56.578Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:27:33.343Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:27:33.506Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: undefined, UserId: 'Hanish2171@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/notes/Hanish2171@gmail.com 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:28:16.167Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:28:54.244Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:28:54.276Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:31:19.628Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:31:19.658Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: undefined, UserId: 'Hanish2171@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (F:\Study Material\googlekeep\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/notes/624ebf76089f8017c42afa1f 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-04-08T03:33:13.333Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:33:36.860Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:33:36.897Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:34:01.120Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:34:01.158Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T03:35:35.198Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T03:35:35.234Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:51:53.467Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:51:53.498Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:55:47.396Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:55:47.429Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:56:20.277Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:56:20.304Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:56:35.129Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:56:35.158Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:56:46.211Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:56:46.238Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:57:01.702Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:57:01.729Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:57:55.574Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:57:55.603Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:58:25.003Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:58:25.030Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:58:47.324Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:58:47.362Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:59:08.191Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:59:08.222Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:59:14.059Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:59:14.091Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:59:31.127Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:59:31.163Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T09:59:52.426Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T09:59:52.457Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T10:00:50.404Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T10:00:50.431Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T10:01:31.923Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T10:01:31.955Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T10:02:11.853Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T10:02:11.896Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T10:20:27.136Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T10:20:27.175Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T11:33:48.438Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T11:33:48.472Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-04-08T11:34:15.024Z"}
+info: Connected to the database. {"timestamp":"2022-04-08T11:34:15.051Z"}
