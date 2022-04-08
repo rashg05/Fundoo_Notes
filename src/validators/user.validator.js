@@ -21,4 +21,15 @@ export const userRegistrationValidator = (req, res, next) => {
   }
 };
 
-
+export const noteValidator = (req, res, next) => {
+  const schema = Joi.object({
+    Title: Joi.string().min(3).required(),
+    Descreption: Joi.string().min(3).required()
+  });
+  const { error, value } = schema.validate(req.body);
+  if (error) {
+    next(error);
+  } else {
+    next();
+  }
+};

@@ -297,3 +297,17 @@ info: ::1 - - [06/Apr/2022:17:54:30 +0000] "GET /api/v1/users/login HTTP/1.1" 20
 
 info: ::ffff:127.0.0.1 - - [06/Apr/2022:17:55:21 +0000] "GET /api/v1/users/login HTTP/1.1" 200 252 "-" "Thunder Client (https://www.thunderclient.com)"
 
+info: ::1 - - [08/Apr/2022:10:00:04 +0000] "GET /api/v1/notes HTTP/1.1" 404 47 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [08/Apr/2022:10:01:38 +0000] "GET /api/v1/notes HTTP/1.1" 200 938 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [08/Apr/2022:10:21:01 +0000] "GET /api/v1/notes/archive/624e9362fcc06452209eebbe HTTP/1.1" 404 47 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [08/Apr/2022:10:21:06 +0000] "PUT /api/v1/notes/archive/624e9362fcc06452209eebbe HTTP/1.1" 200 349 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [08/Apr/2022:10:21:30 +0000] "GET /api/v1/notes HTTP/1.1" 200 984 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [08/Apr/2022:11:34:57 +0000] "POST /api/v1/notes HTTP/1.1" 201 309 "-" "PostmanRuntime/7.29.0"
+
+info: ::1 - - [08/Apr/2022:11:35:23 +0000] "PUT /api/v1/notes/archive/62501de1bbc1aa29b807386a HTTP/1.1" 200 312 "-" "PostmanRuntime/7.29.0"
+
