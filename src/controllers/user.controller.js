@@ -9,7 +9,7 @@ import * as UserService from '../services/user.service';
  */
 export const userRegistration = async (req, res, next) => {
   try {
-    const data = await UserService.newUser(req.body);
+    const data = await UserService.userRegistration(req.body);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
@@ -38,4 +38,17 @@ export const userRegistration = async (req, res, next) => {
     next(error);
   }
 };
+
+export const forgetPassword = async (req,res,next)=>{
+  try {
+    const data = await UserService.forgetPassword(req.body.email);
+    res.status(HttpStatus.OK).json({
+      code:HttpStatus.OK,
+      data: data,
+      message: "password has sent to email"
+    })
+  } catch (error) {
+    next(error);
+  }
+}
 

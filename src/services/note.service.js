@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 //create new note
 export const addNewNote = async (body) => {
   const data = await Note.create(body);
-  return data;s
+  return data;
 };
 
 //get all notes
