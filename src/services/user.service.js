@@ -1,5 +1,6 @@
 import { result } from '@hapi/joi/lib/base';
 import User from '../models/user.model';  
+import { sendingMailTo } from '../utils/mailer';
  
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
@@ -35,3 +36,17 @@ export const userLogIn = async (userBody) => {
   throw new Error('User not Registered');
  }
 };
+
+export const forgetPassword = async (body) => {
+
+  const storedData = await User.findOne({email: body.emailID})
+  if(storedData.emailID != null ){
+    const token = jwt.sign({"emailID": storedData.emailID,"id":storedData._id},process.env.SECRET_CODE2 );
+    const generateMail = sendingMailTo(storedData.emailID, token);
+    return generateMail;
+  }
+  else{
+    throw new Error("email is not registered")
+  }
+}
+
