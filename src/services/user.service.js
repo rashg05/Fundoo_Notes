@@ -39,14 +39,29 @@ export const userLogIn = async (userBody) => {
 
 export const forgetPassword = async (body) => {
 
-  const storedData = await User.findOne({email: body.emailID})
-  if(storedData.emailID != null ){
-    const token = jwt.sign({"emailID": storedData.emailID,"id":storedData._id},process.env.SECRET_CODE2 );
-    const generateMail = sendingMailTo(storedData.emailID, token);
+  console.log(body);
+  const storedData = await User.findOne({email: body})
+  console.log(storedData);
+  if(storedData.email != null ){
+    
+    const token = jwt.sign({"email": storedData.email,"id":storedData._id},process.env.MY_SECRET_KEY );
+    const generateMail = sendingMailTo(storedData.email, token);
     return generateMail;
   }
   else{
     throw new Error("email is not registered")
   }
 }
+
+export const resetPassword = async (body) => {
+  console.log(body);
+  const hash = bcrypt.hashSync(body.password);
+  body.password = hash;
+  const resetPass = await User.findByIdAndUpdate({_id: body.UserID} ,
+  body,
+  {
+    new :true
+  });
+    return resetPass;
+  }
 
