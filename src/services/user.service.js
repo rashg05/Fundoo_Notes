@@ -1,10 +1,14 @@
 import { result } from '@hapi/joi/lib/base';
 import User from '../models/user.model';  
-import { sendingMailTo } from '../utils/mailer';
+import { sendingMailTo } from '../utils/mailer.js';
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
  
-var mongoose = require('mongoose');
-var bcrypt = require('bcryptjs');
-var jwt = require('jsonwebtoken');
+//get all users
+export const getAllUsers = async () => {
+  const data = await User.find();
+  return data;
+};
 
 //create new user
 export const userRegistration = async (userBody) => {
