@@ -12,7 +12,7 @@ router.get('', userController.getAllUsers);
 router.post('/register', userRegistrationValidator, userController.userRegistration);
 
 // // for login
-router.get('/login', userController.userLogIn);
+router.post('/login', userController.userLogIn);
 
 // for forget password
 router.post('/forget', userController.forgetPassword);
