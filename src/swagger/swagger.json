@@ -223,7 +223,7 @@
             }  
         },
     
-        "/note/{_id}": {
+        "/notes/{_id}": {
             "get": {
                 "tags": ["Note Api's"],
                 "description": "Get note by ID",
@@ -331,7 +331,7 @@
             }
         },
 
-        "/note/archive/{_id}": {
+        "/notes/archive/{_id}": {
             "put": {
                 "tags": ["Note Api's"],
                 "description": "Make note Archive by ID",
@@ -366,7 +366,7 @@
             }
         },
 
-        "/note/trash/{_id}": {
+        "/notes/trash/{_id}": {
             "put": {
                 "tags": ["Note Api's"],
                 "description": "Trash note by ID",
