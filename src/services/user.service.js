@@ -13,10 +13,17 @@ export const getAllUsers = async () => {
 //create new user
 export const userRegistration = async (userBody) => {
   let saltRounds = 10;
-  const hashPass = await bcrypt.hash(userBody.password, saltRounds)
+  const hashPass = await bcrypt.hash(userBody.password, saltRounds);
   userBody.password = hashPass;
+
+  // const existCheck = await User.findOne({email: userBody.email})
+  // if(existCheck != null){
+  //   throw new Error("User Exist");
+  // }
+  // else {
   const data = await User.create(userBody);
   return data;
+  // }
 };
 
 //get single user
@@ -50,6 +57,7 @@ export const forgetPassword = async (body) => {
     
     const token = jwt.sign({"email": storedData.email,"id":storedData._id},process.env.MY_SECRET_KEY );
     const generateMail = sendingMailTo(storedData.email, token);
+    console.log("Generated mail ", generateMail);
     return generateMail;
   }
   else{
@@ -59,7 +67,7 @@ export const forgetPassword = async (body) => {
 
 export const resetPassword = async (body) => {
   console.log(body);
-  const hash = bcrypt.hashSync(body.password);
+  const hash = bcrypt.hashSync(body.password, 10);
   body.password = hash;
   const resetPass = await User.findByIdAndUpdate({_id: body.UserID} ,
   body,

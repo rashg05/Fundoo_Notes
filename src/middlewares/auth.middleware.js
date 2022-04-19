@@ -33,19 +33,23 @@ import jwt from 'jsonwebtoken';
 export const passwordAuth = async (req, res, next) => {
   try {
     let bearerToken = req.header('token')
-    if (!bearerToken)
+    console.log("my token ", bearerToken);
+    if (!bearerToken) {
+    
       throw {
         code: HttpStatus.BAD_REQUEST,
         message: 'Authorization token is required'  
 
       };
-
+    }
     jwt.verify(bearerToken, process.env.MY_SECRET_KEY,(err,verifiedtoken)=>{
-      if (err)
+      if (err){
+      console.log("not token");
       throw {
         code: HttpStatus.BAD_REQUEST,
         message: 'Authorization token is incorrect'
       };
+    }
       else{
         req.body.UserID = verifiedtoken.id; 
         console.log(verifiedtoken); 
