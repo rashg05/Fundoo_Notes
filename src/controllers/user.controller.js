@@ -52,7 +52,7 @@ export const userRegistration = async (req, res, next) => {
     const data = await UserService.userLogIn(req.body);
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
-      token: data,
+      data: data,
       message: 'User logged in successfully'
     });
   } catch (error) {

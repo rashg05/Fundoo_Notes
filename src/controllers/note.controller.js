@@ -50,8 +50,9 @@ import * as NoteService from '../services/note.service';
    */
   export const getNote = async (req, res, next) => {
     try {
-      
+      console.log("my note id", req.params._id);
       const noteById = await NoteService.getNote(req.params._id, req.body);
+    
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: noteById,
