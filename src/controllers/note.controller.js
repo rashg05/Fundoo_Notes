@@ -30,7 +30,6 @@ import * as NoteService from '../services/note.service';
  */
  export const getAllNotes = async (req, res, next) => {
     try {
-      
       const allNotes = await NoteService.getAllNotes(req.body);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
@@ -50,6 +49,7 @@ import * as NoteService from '../services/note.service';
    */
   export const getNote = async (req, res, next) => {
     try {
+      // req.body.UserId = req.body.data.id;
       console.log("my note id", req.params._id);
       const noteById = await NoteService.getNote(req.params._id, req.body);
     
@@ -71,7 +71,7 @@ import * as NoteService from '../services/note.service';
    */
   export const updateNote = async (req, res, next) => {
     try {
-      
+      // req.body.UserId = req.body.data.id;
       const noteUpdated = await NoteService.updateNote(req.params._id, req.body);
       res.status(HttpStatus.ACCEPTED).json({
         code: HttpStatus.ACCEPTED,
