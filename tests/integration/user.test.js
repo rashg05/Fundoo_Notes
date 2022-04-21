@@ -168,19 +168,6 @@ describe('User APIs Test', () => {
     });
   });
 
-  describe('Delete note by ID', () => {
-    it('given token delete note by ID should return status 201', (done) => {
-    
-      request(app)
-        .delete(`/api/v1/notes/${_id}`)
-        .set('token', `${userToken}`)
-        .end((err, res) => {
-          expect(res.statusCode).to.be.equal(HttpStatus.OK);
-          done();
-        });
-    });
-  });
-
   describe('Archive note by ID', () => {
     it('given token archive note by ID should return status 201', (done) => {
     
@@ -199,6 +186,19 @@ describe('User APIs Test', () => {
     
       request(app)
         .put(`/api/v1/notes/trash/${_id}`)
+        .set('token', `${userToken}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(HttpStatus.OK);
+          done();
+        });
+    });
+  });
+
+  describe('Delete note by ID', () => {
+    it('given token delete note by ID should return status 201', (done) => {
+    
+      request(app)
+        .delete(`/api/v1/notes/${_id}`)
         .set('token', `${userToken}`)
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(HttpStatus.OK);
