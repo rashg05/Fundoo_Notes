@@ -50,11 +50,19 @@ export const userRegistration = async (req, res, next) => {
  export const userLogIn = async (req, res, next) => {
   try {
     const data = await UserService.userLogIn(req.body);
-    res.status(HttpStatus.OK).json({
-      code: HttpStatus.OK,
-      data: data,
-      message: 'User logged in successfully'
-    });
+    if(data == null) {
+      res.status(HttpStatus.NOT_FOUND).json({
+        code: HttpStatus.NOT_FOUND,
+        message: '${error}'
+      })
+    }
+    else{
+      res.status(HttpStatus.OK).json({
+        code: HttpStatus.OK,
+        data: data,
+        message: 'User logged in successfully'
+      });
+    }
   } catch (error) {
     next(error);
   }

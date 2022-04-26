@@ -1,13 +1,19 @@
-import { result } from '@hapi/joi/lib/base';
 import User from '../models/user.model';  
 import { sendingMailTo } from '../utils/mailer.js';
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import { sender } from '../utils/rabbitMq';
+
  
 //get all users
 export const getAllUsers = async () => {
   const data = await User.find();
-  return data;
+  if(data.length == null){
+    throw new error("there is no user")
+  }
+  else{
+    return data; 
+  }
 };
 
 //create new user
@@ -16,14 +22,15 @@ export const userRegistration = async (userBody) => {
   const hashPass = await bcrypt.hash(userBody.password, saltRounds);
   userBody.password = hashPass;
 
-  // const existCheck = await User.findOne({email: userBody.email})
-  // if(existCheck != null){
-  //   throw new Error("User Exist");
-  // }
-  // else {
+  const existCheck = await User.findOne({email: userBody.email})
+  if(existCheck != null){
+    throw new Error("User Exist");
+  }
+  else {
   const data = await User.create(userBody);
+  sender(data);
   return data;
-  // }
+  }
 };
 
 //get single user
@@ -33,8 +40,10 @@ export const userLogIn = async (userBody) => {
 
  if(data != null){
    const validPassword = bcrypt.compareSync(userBody.password, data.password);
+
    console.log(userBody.password);
    console.log(data.password);
+   
    if(validPassword){
     var token = jwt.sign({ email: data.email, id: data._id }, process.env.KEY);
     return token;

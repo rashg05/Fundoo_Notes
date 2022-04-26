@@ -19,12 +19,12 @@ router.get('/:_id', userAuth, noteController.getNote);
 router.put('/:_id', userAuth, noteController.updateNote);
 
 //route to delete a single note by their user id
-router.delete('/:_id', noteController.deleteNote);
+router.delete('/:_id', userAuth, noteController.deleteNote);
 
 //route to archive a single note by their user id
-router.put('/archive/:_id',noteController.noteArchive)
+router.put('/archive/:_id', userAuth, noteController.noteArchive)
 
 //route to trash a single note by their user id
-router.put('/trash/:_id',noteController.noteTrash)
+router.put('/trash/:_id', userAuth, noteController.noteTrash)
 
 export default router;
