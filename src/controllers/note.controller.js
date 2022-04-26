@@ -76,7 +76,7 @@ import * as NoteService from '../services/note.service';
       res.status(HttpStatus.ACCEPTED).json({
         code: HttpStatus.ACCEPTED,
         data: noteUpdated,
-        message: 'Note updated successfully'
+        message: 'Note updated successfully with ${req.params._id}'
       });
     } catch (error) {
       next(error);
@@ -113,11 +113,19 @@ import * as NoteService from '../services/note.service';
     try {
       
       const noteArchived = await NoteService.noteArchive(req.params._id, req.body);
-      res.status(HttpStatus.OK).json({
-        code: HttpStatus.OK,
-        data: noteArchived,
-        message: 'Note archived successfully'
-      });
+      if (noteArchived == null) {
+        res.status(HttpStatus.NOT_FOUND).json({
+          code: HttpStatus.NOT_FOUND,
+          message: 'There is no note with id: ${req.params._id}'
+        })
+      }
+      else {
+        res.status(HttpStatus.OK).json({
+          code:HttpStatus.OK,
+          data: noteArchived,
+          message:"Note is Archived Successfully"
+        })
+      }
     } catch (error) {
       next(error);
     }
@@ -133,11 +141,19 @@ import * as NoteService from '../services/note.service';
     try {
       
       const noteTrashed = await NoteService.noteTrash(req.params._id, req.body);
-      res.status(HttpStatus.OK).json({
-        code: HttpStatus.OK,
-        data: noteTrashed,
-        message: 'Note fully deleted successfully'
-      });
+      if(noteTrashed == null) {
+        res.status(HttpStatus.NOT_FOUND).json({
+          code: HttpStatus.NOT_FOUND,
+          message: 'There is no note with id: ${req.params._id}'
+        })
+      }
+      else {
+        res.status(HttpStatus.OK).json({
+          code: HttpStatus.OK,
+          data: noteTrashed,
+          message: 'Note fully deleted successfully'
+        })
+      } 
     } catch (error) {
       next(error);
     }
