@@ -1,17 +1,18 @@
 var amqp = require('amqplib/callback_api');
+import { Rabbitmq_sendMail } from '../utils/mailer.js';
 
-export const sender = () => {
-    amqp.connect('amqp://localhost', function(error0, connection) {
+export const sender = (data) => {
+    amqp.connect('amqp://localhost', function (error0, connection) {
         if (error0) {
             throw error0;
         }
-        connection.createChannel(function(error1, channel) {
+        connection.createChannel(function (error1, channel) {
             if (error1) {
                 throw error1;
             }
 
-            var queue = 'rabbit_queue';
-            var msg = 'My Data!';
+            var queue = 'Rabbit_Queue';
+            var msg = JSON.stringify(data);
 
             channel.assertQueue(queue, {
                 durable: false
@@ -20,23 +21,36 @@ export const sender = () => {
 
             console.log(" [x] Sent %s", msg);
         });
-        // setTimeout(function() {
-        //     connection.close();
-        //     process.exit(0);
-        // }, 500);
     });
 }
+
+// export const sender = async (data) => {
+//     try {
+//         const strData = JSON.stringify(data);
+//         const amqpServer = "amqp://localhost"
+//         const connection = await amqp.connect(amqpServer)
+//         const channel = await connection.createChannel();
+//         await channel.assertQueue("register");
+//         channel.sendToQueue("register", Buffer.from(strData));
+//         console.log(`Job sent successfully ${strData}`);
+//     }
+//     catch (ex) {
+//         console.error(ex)
+//     }
+// }
+
+
 export const receiver = () => {
-    amqp.connect('amqp://localhost', function(error0, connection) {
+    amqp.connect('amqp://localhost', function (error0, connection) {
         if (error0) {
             throw error0;
         }
-        connection.createChannel(function(error1, channel) {
+        connection.createChannel(function (error1, channel) {
             if (error1) {
                 throw error1;
             }
 
-            var queue = 'rabbit_queue';
+            var queue = 'Rabbit_Queue';
 
             channel.assertQueue(queue, {
                 durable: false
@@ -45,14 +59,20 @@ export const receiver = () => {
             console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", queue);
 
             channel.consume(queue, function(msg) {
+
                 console.log(" [x] Received %s", msg.content.toString());
-                // const tonodmailer = JSON.parse(msg.content); //string object
-                // console.log(tonodmailer.emailID);
-                // Rabbitmq_sendMail(tonodmailer.emailID);
+
+                const tonodmailer = JSON.parse(msg.content.toString());
+
+                console.log(tonodmailer.email);
+                
+                Rabbitmq_sendMail(tonodmailer.email);
+
             }, {
                 noAck: true
             });
-
         });
     });
 }
+receiver();
+
