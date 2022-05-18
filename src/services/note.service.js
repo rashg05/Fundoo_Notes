@@ -48,7 +48,7 @@ export const updateNote = async (_id, body) => {
       }
     );
     if(data){
-      await client.del('allnotes');
+      await client.del('allNotes');
       return data;
     }
   }  
