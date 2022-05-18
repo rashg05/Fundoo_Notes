@@ -7,7 +7,7 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.updateUser = exports.newUser = exports.getUser = exports.getAllUsers = exports.deleteUser = void 0;
+exports.userRegistration = exports.userLogIn = exports.resetPassword = exports.getAllUsers = exports.forgetPassword = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -22,7 +22,7 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 /**
- * Controller to get all users available
+ * Controller to get all the users
  * @param  {object} req - request object
  * @param {object} res - response object
  * @param {Function} next
@@ -43,7 +43,7 @@ var getAllUsers = /*#__PURE__*/function () {
             res.status(_httpStatusCodes["default"].OK).json({
               code: _httpStatusCodes["default"].OK,
               data: data,
-              message: 'All users fetched successfully'
+              message: "All users are fetched succesafully"
             });
             _context.next = 10;
             break;
@@ -66,7 +66,7 @@ var getAllUsers = /*#__PURE__*/function () {
   };
 }();
 /**
- * Controller to get a single user
+ * Controller to create a new user
  * @param  {object} req - request object
  * @param {object} res - response object
  * @param {Function} next
@@ -75,7 +75,7 @@ var getAllUsers = /*#__PURE__*/function () {
 
 exports.getAllUsers = getAllUsers;
 
-var getUser = /*#__PURE__*/function () {
+var userRegistration = /*#__PURE__*/function () {
   var _ref2 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(req, res, next) {
     var data;
     return _regenerator["default"].wrap(function _callee2$(_context2) {
@@ -84,14 +84,14 @@ var getUser = /*#__PURE__*/function () {
           case 0:
             _context2.prev = 0;
             _context2.next = 3;
-            return UserService.getUser(req.params._id);
+            return UserService.userRegistration(req.body);
 
           case 3:
             data = _context2.sent;
-            res.status(_httpStatusCodes["default"].OK).json({
-              code: _httpStatusCodes["default"].OK,
+            res.status(_httpStatusCodes["default"].CREATED).json({
+              code: _httpStatusCodes["default"].CREATED,
               data: data,
-              message: 'User fetched successfully'
+              message: 'User created successfully'
             });
             _context2.next = 10;
             break;
@@ -109,21 +109,21 @@ var getUser = /*#__PURE__*/function () {
     }, _callee2, null, [[0, 7]]);
   }));
 
-  return function getUser(_x4, _x5, _x6) {
+  return function userRegistration(_x4, _x5, _x6) {
     return _ref2.apply(this, arguments);
   };
 }();
 /**
- * Controller to create a new user
+ * Controller to get a single user
  * @param  {object} req - request object
  * @param {object} res - response object
  * @param {Function} next
  */
 
 
-exports.getUser = getUser;
+exports.userRegistration = userRegistration;
 
-var newUser = /*#__PURE__*/function () {
+var userLogIn = /*#__PURE__*/function () {
   var _ref3 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee3(req, res, next) {
     var data;
     return _regenerator["default"].wrap(function _callee3$(_context3) {
@@ -132,15 +132,24 @@ var newUser = /*#__PURE__*/function () {
           case 0:
             _context3.prev = 0;
             _context3.next = 3;
-            return UserService.newUser(req.body);
+            return UserService.userLogIn(req.body);
 
           case 3:
             data = _context3.sent;
-            res.status(_httpStatusCodes["default"].CREATED).json({
-              code: _httpStatusCodes["default"].CREATED,
-              data: data,
-              message: 'User created successfully'
-            });
+
+            if (data == null) {
+              res.status(_httpStatusCodes["default"].NOT_FOUND).json({
+                code: _httpStatusCodes["default"].NOT_FOUND,
+                message: '${error}'
+              });
+            } else {
+              res.status(_httpStatusCodes["default"].OK).json({
+                code: _httpStatusCodes["default"].OK,
+                data: data,
+                message: 'User logged in successfully'
+              });
+            }
+
             _context3.next = 10;
             break;
 
@@ -157,21 +166,14 @@ var newUser = /*#__PURE__*/function () {
     }, _callee3, null, [[0, 7]]);
   }));
 
-  return function newUser(_x7, _x8, _x9) {
+  return function userLogIn(_x7, _x8, _x9) {
     return _ref3.apply(this, arguments);
   };
 }();
-/**
- * Controller to update a user
- * @param  {object} req - request object
- * @param {object} res - response object
- * @param {Function} next
- */
 
+exports.userLogIn = userLogIn;
 
-exports.newUser = newUser;
-
-var updateUser = /*#__PURE__*/function () {
+var forgetPassword = /*#__PURE__*/function () {
   var _ref4 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee4(req, res, next) {
     var data;
     return _regenerator["default"].wrap(function _callee4$(_context4) {
@@ -180,14 +182,14 @@ var updateUser = /*#__PURE__*/function () {
           case 0:
             _context4.prev = 0;
             _context4.next = 3;
-            return UserService.updateUser(req.params._id, req.body);
+            return UserService.forgetPassword(req.body.email);
 
           case 3:
             data = _context4.sent;
-            res.status(_httpStatusCodes["default"].ACCEPTED).json({
-              code: _httpStatusCodes["default"].ACCEPTED,
+            res.status(_httpStatusCodes["default"].OK).json({
+              code: _httpStatusCodes["default"].OK,
               data: data,
-              message: 'User updated successfully'
+              message: "password has sent to email"
             });
             _context4.next = 10;
             break;
@@ -205,55 +207,53 @@ var updateUser = /*#__PURE__*/function () {
     }, _callee4, null, [[0, 7]]);
   }));
 
-  return function updateUser(_x10, _x11, _x12) {
+  return function forgetPassword(_x10, _x11, _x12) {
     return _ref4.apply(this, arguments);
   };
 }();
-/**
- * Controller to delete a user
- * @param  {object} req - request object
- * @param {object} res - response object
- * @param {Function} next
- */
 
+exports.forgetPassword = forgetPassword;
 
-exports.updateUser = updateUser;
-
-var deleteUser = /*#__PURE__*/function () {
-  var _ref5 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee5(req, res, next) {
+var resetPassword = /*#__PURE__*/function () {
+  var _ref5 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee5(req, res) {
+    var data;
     return _regenerator["default"].wrap(function _callee5$(_context5) {
       while (1) {
         switch (_context5.prev = _context5.next) {
           case 0:
             _context5.prev = 0;
             _context5.next = 3;
-            return UserService.deleteUser(req.params._id);
+            return UserService.resetPassword(req.body);
 
           case 3:
+            data = _context5.sent;
             res.status(_httpStatusCodes["default"].OK).json({
               code: _httpStatusCodes["default"].OK,
-              data: [],
-              message: 'User deleted successfully'
+              data: data,
+              message: "password reset successfully"
             });
-            _context5.next = 9;
+            _context5.next = 10;
             break;
 
-          case 6:
-            _context5.prev = 6;
+          case 7:
+            _context5.prev = 7;
             _context5.t0 = _context5["catch"](0);
-            next(_context5.t0);
+            res.status(_httpStatusCodes["default"].BAD_REQUEST).json({
+              code: _httpStatusCodes["default"].BAD_REQUEST,
+              message: "".concat(_context5.t0)
+            });
 
-          case 9:
+          case 10:
           case "end":
             return _context5.stop();
         }
       }
-    }, _callee5, null, [[0, 6]]);
+    }, _callee5, null, [[0, 7]]);
   }));
 
-  return function deleteUser(_x13, _x14, _x15) {
+  return function resetPassword(_x13, _x14) {
     return _ref5.apply(this, arguments);
   };
 }();
 
-exports.deleteUser = deleteUser;
+exports.resetPassword = resetPassword;

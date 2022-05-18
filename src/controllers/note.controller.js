@@ -12,6 +12,7 @@ import * as NoteService from '../services/note.service';
     // req.body.UserID = req.body.data.UserID;
     // console.log(req.body.UserID)
     const createdData = await NoteService.addNewNote(req.body);
+    console.log(req.body, 'abc')
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: createdData,

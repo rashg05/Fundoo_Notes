@@ -1,13 +1,11 @@
 {
     "swagger": "2.0",
-    "info":
-    {
+    "info": {
         "version": "V1",
         "title": " My Fundoo App",
         "description": "Created some notes and did some CRUD operation"
     },
-
-    "host": "localhost:3000",
+    "host": "localhost:3001",
     "basePath": "/api/v1/",
     "tags": [
         {
@@ -15,7 +13,6 @@
             "description": "Here is my Fundoo App Replica"
         }
     ],
-    
     "schemes": [
         "http"
     ],
@@ -25,11 +22,12 @@
     "produces": [
         "application/json"
     ],
-
     "paths": {
         "/users/register": {
             "post": {
-                "tags": ["User Api's"],
+                "tags": [
+                    "User Api's"
+                ],
                 "description": "Signing UP User...",
                 "parameters": [
                     {
@@ -54,10 +52,11 @@
                 }
             }
         },
-        
         "/users/login": {
             "post": {
-                "tags": ["User Api's"],
+                "tags": [
+                    "User Api's"
+                ],
                 "description": "login user...",
                 "parameters": [
                     {
@@ -82,150 +81,138 @@
                 }
             }
         },
-
         "/users/forget": {
             "post": {
-                "tags": ["User Api's"],
+                "tags": [
+                    "User Api's"
+                ],
                 "description": "forget Password...",
                 "parameters": [
                     {
                         "name": "Forget Password",
                         "in": "body",
                         "description": "Enter the email Id that you have forgotten the password of..",
-                        "schema": 
-                        {
+                        "schema": {
                             "$ref": "#/definitions/forget"
                         }
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 }
             }
         },
-
         "/users/reset": {
             "put": {
-                "tags": ["User Api's"],
+                "tags": [
+                    "User Api's"
+                ],
                 "description": "Reset Password",
                 "parameters": [
                     {
                         "name": "Reset Password",
                         "in": "body",
                         "description": "Enter New password for your Mail ID",
-                        "schema": 
-                        {
+                        "schema": {
                             "$ref": "#/definitions/reset"
                         }
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
             }
         },
-
-        "/notes": {
+        "/notes/create": {
             "post": {
-                "tags": ["Note Api's"],
+                "tags": [
+                    "Note Api's"
+                ],
                 "description": "Create Notes",
                 "parameters": [
                     {
                         "name": "CREATE NOTES",
                         "in": "body",
                         "description": "Note created",
-                        "schema": 
-                        {
+                        "schema": {
                             "$ref": "#/definitions/createNote"
                         }
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
-            },
+            }
+        },
+        "/notes/all": {
             "get": {
-                "tags": ["Note Api's"],
+                "tags": [
+                    "Note Api's"
+                ],
                 "description": "Get All Notes",
                 "parameters": [
                     {
                         "name": "get all",
                         "description": "Get all your notes Using token"
-                        
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
-            }  
+            }
         },
-    
         "/notes/{_id}": {
             "get": {
-                "tags": ["Note Api's"],
+                "tags": [
+                    "Note Api's"
+                ],
                 "description": "Get note by ID",
                 "parameters": [
                     {
@@ -234,183 +221,164 @@
                         "description": "Get specific note using NoteID and Token"
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
-            },
+            }
+        },
+        "/notes/update/{_id}": {
             "put": {
-                "tags": ["Note Api's"],
+                "tags": [
+                    "Note Api's"
+                ],
                 "description": "Update note by ID",
-                "parameters": [   
+                "parameters": [
                     {
                         "name": "_id",
                         "in": "path",
                         "description": "Update specific note using Note ID and Token"
-                        
                     },
-
                     {
                         "name": "Update",
                         "in": "body",
                         "description": "Update specific note using Note ID and Token",
-                        "schema": 
-                        {
+                        "schema": {
                             "$ref": "#/definitions/createNote"
                         }
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
-            },
+            }
+        },
+        "/notes/delete/{_id}": {
             "delete": {
-                "tags": ["Note Api's"],
+                "tags": [
+                    "Note Api's"
+                ],
                 "description": "Delete note by ID",
                 "parameters": [
                     {
                         "name": "_id",
                         "in": "path",
                         "description": "Delete specific Note Using Note ID and token"
-                        
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
             }
         },
-
         "/notes/archive/{_id}": {
             "put": {
-                "tags": ["Note Api's"],
+                "tags": [
+                    "Note Api's"
+                ],
                 "description": "Make note Archive by ID",
                 "parameters": [
                     {
                         "name": "_id",
                         "in": "path",
                         "description": "Archive specific note using Note ID and token"
-                        
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
             }
         },
-
         "/notes/trash/{_id}": {
             "put": {
-                "tags": ["Note Api's"],
+                "tags": [
+                    "Note Api's"
+                ],
                 "description": "Trash note by ID",
                 "parameters": [
                     {
                         "name": "_id",
                         "in": "path",
                         "description": "Trash specific note using Note ID and token"
-                       
                     }
                 ],
-                "produces": 
-                [
+                "produces": [
                     "application/json"
                 ],
-                "responses": 
-                {
-                    "201": 
-                    {
+                "responses": {
+                    "201": {
                         "description": "New user is created"
                     },
-                    "500": 
-                    {
+                    "500": {
                         "description": "Internal server error"
                     }
                 },
-
                 "security": [
                     {
-                      "JWT": []
+                        "JWT": []
                     }
                 ]
             }
         }
     },
-
     "securityDefinitions": {
         "JWT": {
-          "type": "apiKey",
-          "name": "token",
-          "in": "header"
+            "type": "apiKey",
+            "name": "token",
+            "in": "header"
         }
-      },
-
+    },
     "definitions": {
         "SignUP": {
             "type": "object",
@@ -429,8 +397,7 @@
                 }
             }
         },
-
-        "login":{
+        "login": {
             "type": "object",
             "properties": {
                 "email": {
@@ -441,8 +408,7 @@
                 }
             }
         },
-        
-        "forget":{
+        "forget": {
             "type": "object",
             "properties": {
                 "email": {
@@ -450,16 +416,14 @@
                 }
             }
         },
-
         "reset": {
-          "type": "object",
+            "type": "object",
             "properties": {
                 "password": {
                     "type": "string"
-                }    
+                }
             }
         },
-
         "createNote": {
             "type": "object",
             "properties": {
@@ -475,5 +439,4 @@
             }
         }
     }
-}    
-        
+}
