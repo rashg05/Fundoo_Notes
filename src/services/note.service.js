@@ -39,7 +39,7 @@ export const getNote = async (_id, UserId) => {
 export const updateNote = async (_id, body) => {
   const forCheck = await Note.findById(_id);
   if(forCheck == null){
-    throw new error("There is no note with this ID")
+    throw new error("There is no any note with this ID")
   } else{
     const data = await Note.findByIdAndUpdate({ _id: _id, UserId: body.UserId }, 
       body,
@@ -48,7 +48,7 @@ export const updateNote = async (_id, body) => {
       }
     );
     if(data){
-      await client.del('allnotes');
+      await client.del('allNotes');
       return data;
     }
   }  
