@@ -15,6 +15,7 @@ const noteSchema = new Schema(
         color: {
           type: String
         },
+        
         IsArchived: {
           type: Boolean,
           default: false

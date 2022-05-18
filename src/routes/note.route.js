@@ -16,10 +16,10 @@ router.post('/create', noteValidator, userAuth, noteController.addNewNote);
 router.get('/:_id', userAuth, noteController.getNote);
 
 //route to update a single note by their user id
-router.put('/:_id', userAuth, noteController.updateNote);
+router.put('/update/:_id', userAuth, noteController.updateNote);
 
 //route to delete a single note by their user id
-router.delete('/:_id', userAuth, noteController.deleteNote);
+router.delete('/delete/:_id', userAuth, noteController.deleteNote);
 
 //route to archive a single note by their user id
 router.put('/archive/:_id', userAuth, noteController.noteArchive)

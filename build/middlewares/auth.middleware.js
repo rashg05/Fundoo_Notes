@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.userAuth = void 0;
+exports.userAuth = exports.passwordAuth = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -25,14 +25,13 @@ var _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
  */
 var userAuth = /*#__PURE__*/function () {
   var _ref = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(req, res, next) {
-    var bearerToken, _yield$jwt$verify, user;
-
+    var bearerToken, user;
     return _regenerator["default"].wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            bearerToken = req.header('Authorization');
+            bearerToken = req.header('token');
 
             if (bearerToken) {
               _context.next = 4;
@@ -45,30 +44,30 @@ var userAuth = /*#__PURE__*/function () {
             };
 
           case 4:
-            bearerToken = bearerToken.split(' ')[1];
-            _context.next = 7;
-            return _jsonwebtoken["default"].verify(bearerToken, 'your-secret-key');
+            _context.next = 6;
+            return _jsonwebtoken["default"].verify(bearerToken, process.env.KEY);
 
-          case 7:
-            _yield$jwt$verify = _context.sent;
-            user = _yield$jwt$verify.user;
-            res.locals.user = user;
-            res.locals.token = bearerToken;
+          case 6:
+            user = _context.sent;
+            // res.locals.user = user;
+            // res.locals.token = bearerToken;
+            req.body.UserId = user.email;
+            console.log("User Credentials: ", user);
             next();
-            _context.next = 17;
+            _context.next = 15;
             break;
 
-          case 14:
-            _context.prev = 14;
+          case 12:
+            _context.prev = 12;
             _context.t0 = _context["catch"](0);
             next(_context.t0);
 
-          case 17:
+          case 15:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 14]]);
+    }, _callee, null, [[0, 12]]);
   }));
 
   return function userAuth(_x, _x2, _x3) {
@@ -77,3 +76,62 @@ var userAuth = /*#__PURE__*/function () {
 }();
 
 exports.userAuth = userAuth;
+
+var passwordAuth = /*#__PURE__*/function () {
+  var _ref2 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(req, res, next) {
+    var bearerToken;
+    return _regenerator["default"].wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.prev = 0;
+            bearerToken = req.header('token');
+            console.log("my token ", bearerToken);
+
+            if (bearerToken) {
+              _context2.next = 5;
+              break;
+            }
+
+            throw {
+              code: _httpStatusCodes["default"].BAD_REQUEST,
+              message: 'Authorization token is required'
+            };
+
+          case 5:
+            _jsonwebtoken["default"].verify(bearerToken, process.env.MY_SECRET_KEY, function (err, verifiedtoken) {
+              if (err) {
+                console.log("not token");
+                throw {
+                  code: _httpStatusCodes["default"].BAD_REQUEST,
+                  message: 'Authorization token is incorrect'
+                };
+              } else {
+                req.body.UserID = verifiedtoken.id;
+                console.log(verifiedtoken);
+                next();
+              }
+            });
+
+            _context2.next = 11;
+            break;
+
+          case 8:
+            _context2.prev = 8;
+            _context2.t0 = _context2["catch"](0);
+            next(_context2.t0);
+
+          case 11:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2, null, [[0, 8]]);
+  }));
+
+  return function passwordAuth(_x4, _x5, _x6) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+
+exports.passwordAuth = passwordAuth;
